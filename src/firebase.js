@@ -21,8 +21,10 @@ const firebaseDB = firebase.database();
 
 // Get matches within database
 const firebaseMatches = firebaseDB.ref('matches');
+const firebasePromotions = firebaseDB.ref('promotions');
 
 export {
   firebase,
-  firebaseMatches
+  firebaseMatches,
+  firebasePromotions
 }

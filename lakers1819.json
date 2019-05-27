@@ -1484,5 +1484,10 @@
       "Exp": "5",
       "College": "University of North Carolina"
     }
+  },
+  "promotions": {
+    "0": {
+      "email": "alexw14@gmail.com"
+    }
   }
 }
