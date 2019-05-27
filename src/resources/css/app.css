@@ -21,6 +21,10 @@ a {
     background: #000000;
 }
 
+.bck_white {
+    background: #ffffff;
+}
+
 .bck_lblue {
     background: #98c5e9;
 }
@@ -225,7 +229,7 @@ footer .footer_discl {
 ===============================*/
 
 .home_matches_wrapper {
-    background: #98c5e9;
+    background: #552583;
     margin-top:9px;
     padding: 50px 0px;
 }

@@ -6,33 +6,33 @@ import FeaturedPlayer from '../../../resources/images/lakers_featured_player.png
 
 class Text extends Component {
 
-  animateNumber = () => (
-    <Animate
-      show={true}
-      start={{
-        opacity: 0,
-        rotate: 0
-      }}
-      enter={{
-        opacity: 1,
-        rotate: [360],
-        timing: { duration: 1000, ease: easePolyOut }
-      }}
-    >
-      {({ opacity, rotate }) => {
-        return (
-          <div className="featured_number"
-            style={{
-              opacity,
-              transform: `translate(260px,170px) rotateY(${rotate}deg)`
-            }}
-          >
-            16
-          </div>
-        )
-      }}
-    </Animate>
-  )
+  // animateNumber = () => (
+  //   <Animate
+  //     show={true}
+  //     start={{
+  //       opacity: 0,
+  //       rotate: 0
+  //     }}
+  //     enter={{
+  //       opacity: 1,
+  //       rotate: [360],
+  //       timing: { duration: 1000, ease: easePolyOut }
+  //     }}
+  //   >
+  //     {({ opacity, rotate }) => {
+  //       return (
+  //         <div className="featured_number"
+  //           style={{
+  //             opacity,
+  //             transform: `translate(260px,170px) rotateY(${rotate}deg)`
+  //           }}
+  //         >
+  //           16
+  //         </div>
+  //       )
+  //     }}
+  //   </Animate>
+  // )
 
   animateFirst = () => (
     <Animate
@@ -57,7 +57,7 @@ class Text extends Component {
               transform: `translate(${x}px,${y}px)`
             }}
           >
-            League
+            2018-19
           </div>
         )
       }}
@@ -87,7 +87,7 @@ class Text extends Component {
               transform: `translate(${x}px,${y}px)`
             }}
           >
-            Championships
+            Season
         </div>
         )
       }}
@@ -111,7 +111,7 @@ class Text extends Component {
             style={{
               opacity,
               background:`url(${FeaturedPlayer})`,
-              transform: `translate(550px,201px)`
+              transform: `translate(650px,201px)`
             }}
           >
       </div>
@@ -123,7 +123,7 @@ class Text extends Component {
   render() {
     return (
       <div className="featured_text">
-        {this.animateNumber()}
+        {/* {this.animateNumber()} */}
         {this.animateFirst()}
         {this.animateSecond()}
         {this.animatePlayer()}
