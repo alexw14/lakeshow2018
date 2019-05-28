@@ -32,8 +32,8 @@ class Header extends Component {
           <Link to='/team'>
             <Button color="inherit">Team</Button>
           </Link>
-          <Link to='/matches'>
-            <Button color="inherit">Matches</Button>
+          <Link to='/games'>
+            <Button color="inherit">Games</Button>
           </Link>
         </Toolbar>
       </AppBar>

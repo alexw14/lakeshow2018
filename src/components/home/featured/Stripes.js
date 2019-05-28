@@ -6,35 +6,27 @@ class Stripes extends Component {
 
   state = {
     stripes: [
-
       {
         background: '#FDB927',
         left: 250,
         rotate: 25,
         top: -260,
-        delay: 0
+        delay: 200
       },
       {
         background: '#ffffff',
         left: 500,
         rotate: 25,
         top: -397,
-        delay: 200
+        delay: 400
       },
       {
         background: '#FDB927',
         left: 750,
         rotate: 25,
         top: -498,
-        delay: 400
+        delay: 600
       }
-      // {
-      //   background: '#ffffff',
-      //   left: 1000,
-      //   rotate: -25,
-      //   top: -498,
-      //   delay: 800
-      // }
     ]
   }
 

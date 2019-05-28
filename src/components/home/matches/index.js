@@ -7,11 +7,11 @@ const MatchesHome = () => {
     <div className="home_matches_wrapper">
       <div className="container">
         <Tag 
-          bck="#000000"
+          bck="transparent"
           size="50px"
           color="#ffffff"
         >
-          Matches
+          Games
         </Tag>
 
         <Blocks />
@@ -21,9 +21,9 @@ const MatchesHome = () => {
           size="22px"
           color="#000000"
           link={true}
-          linkTo="/matches"
+          linkTo="/games"
         >
-          See More Matches
+          See More Games
         </Tag>
       </div>
     </div>

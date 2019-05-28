@@ -1,10 +1,10 @@
 import React from 'react';
 
 const MatchesBlock = ({ match }) => {
-  
+
   const getTeamName = (name) => {
     let arr = name.toLowerCase().split(" ");
-    return arr[arr.length-1];
+    return arr[arr.length - 1];
   }
 
   let home = '';
@@ -37,19 +37,19 @@ const MatchesBlock = ({ match }) => {
       <div className="match_wrapper">
         <div className="match_top">
           <div className="left">
-            <div className="icon" style={{background:`url(/images/team_icons/${awayIcon}.png)`}}></div>
+            <div className="icon" style={{ background: `url(/images/team_icons/${awayIcon}.png)` }}></div>
             <div className="team_name" style={{ fontSize: '28px' }}>{away}</div>
           </div>
-          <div className="right" style={{ fontSize: '34px' }}>
+          <div className="right" style={{ fontSize: '34px', paddingTop: '15px' }}>
             {awayScore}
           </div>
         </div>
         <div className="match_bottom">
           <div className="left">
-            <div className="icon" style={{background:`url(/images/team_icons/${homeIcon}.png)`}}></div>
+            <div className="icon" style={{ background: `url(/images/team_icons/${homeIcon}.png)` }}></div>
             <div className="team_name" style={{ fontSize: '28px' }}>{home}</div>
           </div>
-          <div className="right" style={{ fontSize: '34px' }}>
+          <div className="right" style={{ fontSize: '34px', paddingTop: '15px' }}>
             {homeScore}
           </div>
         </div>
