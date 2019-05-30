@@ -1,13 +1,13 @@
 import React from 'react';
 
-const FormField = ({ formData, id, change }) => {
+const FormField = ({ id, formData, change }) => {
 
   const showError = () => {
     let errorMessage = <div className="error_label">
       {
         formData.validation && !formData.valid ?
           formData.validationMessage
-        : null
+          : null
       }
     </div>
     return errorMessage;
@@ -19,11 +19,45 @@ const FormField = ({ formData, id, change }) => {
       case ('input'):
         formTemplate = (
           <div>
+
+            {formData.showLabel ?
+              <div className="label_inputs">
+                {formData.config.label}
+              </div>
+              : null
+            }
+
             <input
               {...formData.config}
               value={formData.value}
               onChange={(event) => change({ event, id })}
             />
+            {showError()}
+          </div>
+        )
+        break;
+      case ('select'):
+        formTemplate = (
+          <div>
+            {formData.showLabel ?
+              <div className="label_inputs">
+                {formData.config.label}
+              </div>
+              : null
+            }
+            <select
+              value={formData.value}
+              onChange={(event) => change({ event, id })}
+            >
+              <option value="">Select One</option>
+              {
+                formData.config.options.map((item) => (
+                  <option key={item.key} value={item.key}>
+                    {item.value}
+                  </option>
+                ))
+              }
+            </select>
             {showError()}
           </div>
         )

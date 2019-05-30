@@ -10,11 +10,13 @@ import SignIn from './components/signin';
 
 import Dashboard from './components/admin/Dashboard';
 import AdminMatches from './components/admin/matches';
+import AddEditMatch from './components/admin/matches/AddEditMatch';
 
 const Routes = (props) => {
   return (
     <Layout>
       <Switch>
+        <PrivateRoute {...props} exact path="/admin-games/edit-game/:id" component={AddEditMatch} />
         <PrivateRoute {...props} exact path="/admin-games" component={AdminMatches} />
         <PrivateRoute {...props} exact path="/dashboard" component={Dashboard} />
         <PublicRoute {...props} exact path="/signin" component={SignIn} restricted={true}/>
