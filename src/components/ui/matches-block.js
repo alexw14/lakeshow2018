@@ -14,19 +14,19 @@ const MatchesBlock = ({ match }) => {
   let homeIcon = '';
   let awayIcon = '';
   if (match.FIELD6 === "@") {
-    home = match.Opponent;
+    home = match.awayTeam;
     away = 'Los Angeles Lakers';
-    homeScore = match.Opp;
-    awayScore = match.Tm;
-    homeIcon = getTeamName(match.Opponent);
+    homeScore = match.awayTeamScore;
+    awayScore = match.homeTeamScore;
+    homeIcon = getTeamName(match.awayTeam);
     awayIcon = 'lakers';
   } else {
     home = 'Los Angeles Lakers';
-    away = match.Opponent;
-    homeScore = match.Tm;
-    awayScore = match.Opp;
+    away = match.awayTeam;
+    homeScore = match.homeTeamScore;
+    awayScore = match.awayTeamScore;
     homeIcon = 'lakers';
-    awayIcon = getTeamName(match.Opponent);
+    awayIcon = getTeamName(match.awayTeam);
   }
 
   return (

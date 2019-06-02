@@ -48,14 +48,14 @@ class AdminMatches extends Component {
                 {this.state.matches ?
                   this.state.matches.map((match, i) => (
                     <TableRow key={i}>
-                      <TableCell>{match.Date}</TableCell>
+                      <TableCell>{match.date}</TableCell>
                       <TableCell>
                         <Link to={`/admin-games/edit-game/${match.id}`}>
-                          {match.FIELD6}{match.Opponent}
+                          {match.FIELD6}{match.awayTeam}
                         </Link>
                       </TableCell>
-                      <TableCell>{match.FIELD8}</TableCell>
-                      <TableCell>{match.Opp} - {match.Tm} (Lakers)</TableCell>
+                      <TableCell>{match.result}</TableCell>
+                      <TableCell>{match.awayTeamScore} - {match.homeTeamScore} (Lakers)</TableCell>
                     </TableRow>
                   ))
                   : null
