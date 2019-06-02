@@ -1485,6 +1485,158 @@
       "College": "University of North Carolina"
     }
   },
+  "teams": {
+    "-LEkjWZ2lNF9bj8LKJHP": {
+      "name": "Philadelphia 76ers",
+      "shortName": "76ers",
+      "thmb": "76ers"
+    },
+    "-LEkjWZQ2Otlfetr2y62": {
+      "name": "Portland Trail Blazers",
+      "shortName": "Trail Blazers",
+      "thmb": "blazers"
+    },
+    "-LEkjWZS9pr6JW9GHwrk": {
+      "name": "Milwaukee Bucks",
+      "shortName": "Bucks",
+      "thmb": "bucks"
+    },
+    "-LEkjWZS9pr6JW9GHwrl": {
+      "name": "Chicago Bulls",
+      "shortName": "Bulls",
+      "thmb": "bulls"
+    },
+    "-LEkjWZTzWhJZqm-a3Sx": {
+      "name": "Cleveland Cavaliers",
+      "shortName": "Cavaliers",
+      "thmb": "cavaliers"
+    },
+    "-LEkjWZU5jlUE6VFoYzZ": {
+      "name": "Boston Celtics",
+      "shortName": "Celtics",
+      "thmb": "celtics"
+    },
+    "-LEkjWZVs9TaDOngv2w9": {
+      "name": "Los Angeles Clippers",
+      "shortName": "Clippers",
+      "thmb": "clippers"
+    },
+    "-LEkjWZVs9TaDOngv2wA": {
+      "name": "Memphis Grizzlies",
+      "shortName": "Grizzlies",
+      "thmb": "grizzlies"
+    },
+    "-LEkjWZVs9TaDOngv2wB": {
+      "name": "Atlanta Hawks",
+      "shortName": "Hawks",
+      "thmb": "hawks"
+    },
+    "-LEkjWZWqgh0nHltmK7K": {
+      "name": "Miami Heat",
+      "shortName": "Heat",
+      "thmb": "heat"
+    },
+    "-LEkjWZWqgh0nHltmK7L": {
+      "name": "Charlotte Hornets",
+      "shortName": "Hornets",
+      "thmb": "hornets"
+    },
+    "-LEkjWZWqgh0nHltmK7M": {
+      "name": "Utah Jazz",
+      "shortName": "Jazz",
+      "thmb": "jazz"
+    },
+    "-LEkjWZXyLYyHX18d-Nc": {
+      "name": "Sacramento Kings",
+      "shortName": "Kings",
+      "thmb": "kings"
+    },
+    "-LEkjWZYlNGsVaMovmED": {
+      "name": "New York Knicks",
+      "shortName": "Knicks",
+      "thmb": "knicks"
+    },
+    "-LEkjWZYlNGsVaMovmEE": {
+      "name": "Los Angeles Lakers",
+      "shortName": "Lakers",
+      "thmb": "lakers"
+    },
+    "-LEkjWZ_o8L_o7aPCUhY": {
+      "name": "Orlando Magic",
+      "shortName": "Magic",
+      "thmb": "magic"
+    },
+    "-LEkjWZcp-XO7u9MM_-y": {
+      "name": "Dallas Mavericks",
+      "shortName": "Mavericks",
+      "thmb": "mavericks"
+    },
+    "-LEkjWZdwNi8ZTKC8zFR": {
+      "name": "Brooklyn Nets",
+      "shortName": "Nets",
+      "thmb": "nets"
+    },
+    "-LEkjWZdwNi8ZTKC8zFS": {
+      "name": "Denver Nuggets",
+      "shortName": "Nuggets",
+      "thmb": "nuggets"
+    },
+    "-LEkjWZewyjuwM_KMEJa": {
+      "name": "Indiana Pacers",
+      "shortName": "Pacers",
+      "thmb": "pacers"
+    },
+    "-LEkjWZewyjuwM_KMEJb": {
+      "name": "New Orleans Pelicans",
+      "shortName": "Pelicans",
+      "thmb": "pelicans"
+    },
+    "-LEkjWZewyjuwM_KMEJc": {
+      "name": "Detroit Pistons",
+      "shortName": "Pistons",
+      "thmb": "pistons"
+    },
+    "-LEkjWZewyjuwM_KMEJd": {
+      "name": "Toronto Raptors",
+      "shortName": "Raptors",
+      "thmb": "raptors"
+    },
+    "-LEkjWZewyjuwM_KMEJe": {
+      "name": "Houston Rockets",
+      "shortName": "Rockets",
+      "thmb": "rockets"
+    },
+    "-LEkjWZewyjuwM_KMEJf": {
+      "name": "San Antonio Spurs",
+      "shortName": "Spurs",
+      "thmb": "spurs"
+    },
+    "-LEkjWZewyjuwM_KMEJg": {
+      "name": "Phoenix Suns",
+      "shortName": "Suns",
+      "thmb": "suns"
+    },
+    "-LEkjWZewyjuwM_KMEJh": {
+      "name": "Oklahoma City Thunder",
+      "shortName": "Thunder",
+      "thmb": "thunder"
+    },
+    "-LEkjWZewyjuwM_KMEJi": {
+      "name": "Minnesota Timberwolves",
+      "shortName": "Timberwolves",
+      "thmb": "timberwolves"
+    },
+    "-LEkjWZewyjuwM_KMEJj": {
+      "name": "Golden State Warriors",
+      "shortName": "Warriors",
+      "thmb": "warriors"
+    },
+    "-LEkjWZewyjuwM_KMEJk": {
+      "name": "Washington Wizards",
+      "shortName": "Wizards",
+      "thmb": "wizards"
+    }
+  },
   "promotions": {
     "0": {
       "email": "alexw14@gmail.com"

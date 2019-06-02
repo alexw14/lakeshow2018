@@ -4,6 +4,8 @@ import AdminLayout from '../../../hoc/AdminLayout';
 import FormField from '../../ui/form-fields';
 import { validate } from '../../ui/misc';
 
+
+
 class AddEditMatch extends Component {
 
   state = {
@@ -90,6 +92,15 @@ class AddEditMatch extends Component {
         validationMessage: '',
         showLabel: false
       }
+    }
+  }
+
+  componentDidMount() {
+    const matchId = this.props.match.params.id;
+    if (!matchId) {
+
+    } else {
+
     }
   }
 
