@@ -51,7 +51,7 @@ class AdminMatches extends Component {
                       <TableCell>{match.date}</TableCell>
                       <TableCell>
                         <Link to={`/admin-games/edit-game/${match.id}`}>
-                          {match.FIELD6}{match.awayTeam}
+                          {match.at}{match.awayTeam}
                         </Link>
                       </TableCell>
                       <TableCell>{match.result}</TableCell>

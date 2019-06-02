@@ -143,7 +143,6 @@ class AddEditMatch extends Component {
         newFormData[key].config.options = teamOptions;
       }
     }
-    console.log(newFormData)
     this.setState({
       matchId,
       formType: type,
@@ -175,6 +174,25 @@ class AddEditMatch extends Component {
       firebaseDB.ref(`matches/${matchId}`).once('value').then((snapshot) => {
         const match = snapshot.val();
         getTeams(match, 'Edit Match');
+      })
+    }
+  }
+
+  submitForm(event) {
+    event.preventDefault();
+
+    let dataToSubmit = {}
+    let formIsValid = true;
+
+    for (let key in this.state.formData) {
+      dataToSubmit[key] = this.state.formData[key].value;
+      formIsValid = this.state.formData[key].valid && formIsValid;
+    }
+    if (formIsValid) {
+      console.log(dataToSubmit)
+    } else {
+      this.setState({
+        formError: true
       })
     }
   }
@@ -252,7 +270,6 @@ class AddEditMatch extends Component {
           </div>
         </div>
       </AdminLayout>
-
     );
   }
 }

@@ -13,7 +13,7 @@ const MatchesBlock = ({ match }) => {
   let awayScore = 0;
   let homeIcon = '';
   let awayIcon = '';
-  if (match.FIELD6 === "@") {
+  if (match.at === "@") {
     home = match.awayTeam;
     away = 'Los Angeles Lakers';
     homeScore = match.awayTeamScore;
