@@ -65,10 +65,6 @@ class AdminMatches extends Component {
           </Paper>
         </div>
 
-
-
-
-
         <div className="admin_progress">
           {this.state.isLoading ?
             <CircularProgress thickness={7} style={{ color: '#552583' }} />

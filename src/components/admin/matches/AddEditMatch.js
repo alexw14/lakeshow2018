@@ -169,7 +169,7 @@ class AddEditMatch extends Component {
     }
 
     if (!matchId) {
-      // Add Match
+      getTeams(false, 'Add Match');
     } else {
       firebaseDB.ref(`matches/${matchId}`).once('value').then((snapshot) => {
         const match = snapshot.val();
@@ -198,10 +198,14 @@ class AddEditMatch extends Component {
         firebaseDB.ref(`matches/${this.state.matchId}`).update(dataToSubmit).then(() => {
           this.successForm('Updated successfully');
         }).catch((error) => {
-          this.setState({ formError: true })
+          this.setState({ formError: true });
         })
       } else {
-        /// Add match
+        firebaseMatches.push(dataToSubmit).then(()=>{
+          this.props.history.push('/admin-games');
+        }).catch((error)=> {
+          this.setState({ formError: true });
+        })
       }
     } else {
       this.setState({ formError: true })
