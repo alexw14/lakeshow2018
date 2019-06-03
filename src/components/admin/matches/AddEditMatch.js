@@ -178,22 +178,33 @@ class AddEditMatch extends Component {
     }
   }
 
+  successForm(msg) {
+    this.setState({ formSuccess: msg });
+    setTimeout(() => {
+      this.setState({ formSuccess: '' });
+    }, 2000);
+  }
+
   submitForm(event) {
     event.preventDefault();
-
     let dataToSubmit = {}
     let formIsValid = true;
-
     for (let key in this.state.formData) {
       dataToSubmit[key] = this.state.formData[key].value;
       formIsValid = this.state.formData[key].valid && formIsValid;
     }
     if (formIsValid) {
-      console.log(dataToSubmit)
+      if (this.state.formType === "Edit Match") {
+        firebaseDB.ref(`matches/${this.state.matchId}`).update(dataToSubmit).then(() => {
+          this.successForm('Updated successfully');
+        }).catch((error) => {
+          this.setState({ formError: true })
+        })
+      } else {
+        /// Add match
+      }
     } else {
-      this.setState({
-        formError: true
-      })
+      this.setState({ formError: true })
     }
   }
 
