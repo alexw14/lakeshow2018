@@ -7,7 +7,7 @@ import { validate } from '../../ui/misc';
 import FileUploader from '../../ui/file-uploader';
 import { firebase, firebaseDB, firebasePlayers } from '../../../firebase';
 import { firebaseLooper } from '../../ui/misc';
-import { truncate } from 'fs';
+
 
 class AddEditPlayer extends Component {
 
@@ -91,15 +91,19 @@ class AddEditPlayer extends Component {
         validation: {
           required: true
         },
-        valid: true
+        valid: false
       }
     }
   }
 
-  updateForm(element) {
+  updateForm(element, content = '') {
     const newFormData = { ...this.state.formData };
     const newElement = { ...newFormData[element.id] }
-    newElement.value = element.event.target.value;
+    if (content === '') {
+      newElement.value = element.event.target.value;
+    } else {
+      newElement.value = content;
+    }
 
     let validData = validate(newElement);
     newElement.valid = validData[0];
@@ -121,6 +125,17 @@ class AddEditPlayer extends Component {
       formIsValid = this.state.formData[key].valid && formIsValid;
     }
     if (formIsValid) {
+      if (this.state.formType === 'Edit player') {
+
+      } else {
+        firebasePlayers.push(dataToSubmit).then(() => {
+          this.props.history.push('/admin-players')
+        }).catch((e) => {
+          this.setState({
+            formError: true
+          })
+        })
+      }
 
     } else {
       this.setState({ formError: true })
@@ -128,11 +143,17 @@ class AddEditPlayer extends Component {
   }
 
   resetImage = () => {
-
+    const newFormData = { ...this.state.formData };
+    newFormData['image'].value = '';
+    newFormData['image'].valid = false;
+    this.setState({
+      defaultImg: '',
+      formData: newFormData
+    })
   }
 
-  storeFilename = () => {
-
+  storeFilename = (filename) => {
+    this.updateForm({ id: 'image' }, filename)
   }
 
   componentDidMount() {
@@ -160,7 +181,7 @@ class AddEditPlayer extends Component {
                 defaultImg={this.state.defaultImg}
                 defaultImgName={this.state.formData.image.value}
                 resetImage={() => this.resetImage()}
-                filename={(fileName) => this.storeFilename()}
+                filename={(filename) => this.storeFilename(filename)}
               />
               <FormField
                 id={'number'}
