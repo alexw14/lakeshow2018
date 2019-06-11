@@ -6,7 +6,6 @@ import { validate } from '../../ui/misc';
 
 import FileUploader from '../../ui/file-uploader';
 import { firebase, firebaseDB, firebasePlayers } from '../../../firebase';
-import { firebaseLooper } from '../../ui/misc';
 
 
 class AddEditPlayer extends Component {
@@ -116,6 +115,15 @@ class AddEditPlayer extends Component {
     });
   }
 
+  successForm = (msg) => {
+    this.setState({
+      formSuccess: msg
+    })
+    setTimeout(() => {
+      this.setState({ formSuccess: '' })
+    }, 2000)
+  }
+
   submitForm(event) {
     event.preventDefault();
     let dataToSubmit = {}
@@ -126,6 +134,11 @@ class AddEditPlayer extends Component {
     }
     if (formIsValid) {
       if (this.state.formType === 'Edit player') {
+        firebaseDB.ref(`players/${this.state.playerId}`).update(dataToSubmit).then(() => {
+          this.successForm('Updated successfully')
+        }).catch(error => {
+          this.setState({ formError: true })
+        })
 
       } else {
         firebasePlayers.push(dataToSubmit).then(() => {
@@ -153,7 +166,22 @@ class AddEditPlayer extends Component {
   }
 
   storeFilename = (filename) => {
-    this.updateForm({ id: 'image' }, filename)
+    this.updateForm({ id: 'image' }, filename);
+  }
+
+  updateFields = (player, playerId, formType, defaultImg) => {
+    const newFormData = { ...this.state.formData };
+    for (let key in newFormData) {
+      newFormData[key].value = player[key];
+      newFormData[key].valid = true;
+
+    }
+    this.setState({
+      playerId,
+      defaultImg,
+      formType,
+      formData: newFormData
+    })
   }
 
   componentDidMount() {
@@ -162,7 +190,12 @@ class AddEditPlayer extends Component {
     if (!playerId) {
       this.setState({ formType: 'Add Player' })
     } else {
-
+      firebaseDB.ref(`players/${playerId}`).once('value').then((snapshot) => {
+        const playerData = snapshot.val();
+        firebase.storage().ref('players').child(playerData.image).getDownloadURL().then((url) => {
+          this.updateFields(playerData, playerId, 'Edit player', url);
+        })
+      })
     }
   }
 
