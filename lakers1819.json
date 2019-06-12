@@ -985,176 +985,125 @@
       "L": 45
     }
   },
-  "players": {
-    "0": {
-      "Player": "Kyle Kuzma",
-      "Pos": "PF",
-      "Ht": "6-9",
-      "Wt": 220,
-      "Birth date": "July 24 1995",
-      "FIELD7": "us",
-      "Exp": "1",
-      "College": "University of Utah"
+  "players" : {
+    "-Lh4GPY9_1T4DQoWCdGn" : {
+      "Exp" : "1",
+      "Player" : "Lonzo Ball",
+      "Pos" : "PG",
+      "image" : "fe61a486-67d0-4730-adbb-0863671955ad.png",
+      "number" : "2"
     },
-    "1": {
-      "Player": "Kentavious Caldwell-Pope",
-      "Pos": "SG",
-      "Ht": "6-5",
-      "Wt": 205,
-      "Birth date": "February 18 1993",
-      "FIELD7": "us",
-      "Exp": "5",
-      "College": "University of Georgia"
+    "-Lh8VKQlBXBTVEM19hJp" : {
+      "Exp" : "R",
+      "Player" : "Isaac Bonga",
+      "Pos" : "PG",
+      "image" : "2fccc16a-4d69-4ee7-a5f7-97b0d6cfa414.png",
+      "number" : "17"
     },
-    "2": {
-      "Player": "Lonzo Ball",
-      "Pos": "PG",
-      "Ht": "6-6",
-      "Wt": 190,
-      "Birth date": "October 27 1997",
-      "FIELD7": "us",
-      "Exp": "1",
-      "College": "University of California Los Angeles"
+    "-Lh8Vi_kZ5Ez5Qy7MMqF" : {
+      "Exp" : "5",
+      "Player" : "Reggie Bullock",
+      "Pos" : "SG",
+      "image" : "63324723-2ebd-4d87-a702-83fe645c251a.png",
+      "number" : "35"
     },
-    "3": {
-      "Player": "Josh Hart",
-      "Pos": "SG",
-      "Ht": "6-5",
-      "Wt": 215,
-      "Birth date": "March 6 1995",
-      "FIELD7": "us",
-      "Exp": "1",
-      "College": "Villanova University"
+    "-Lh8Vu_hutow2_9rU3rB" : {
+      "Exp" : "5",
+      "Player" : "Kentavious Caldwell-Pope",
+      "Pos" : "SG",
+      "image" : "bc1e43c0-e952-49be-9e6c-5e63995597ef.png",
+      "number" : "1"
     },
-    "4": {
-      "Player": "Alex Caruso  (TW)",
-      "Pos": "PG",
-      "Ht": "6-5",
-      "Wt": 186,
-      "Birth date": "February 28 1994",
-      "FIELD7": "us",
-      "Exp": "1",
-      "College": "Texas A&M University"
+    "-Lh8W4Z7F0lScLWCz4Jn" : {
+      "Exp" : "1",
+      "Player" : "Alex Caruso",
+      "Pos" : "PG",
+      "image" : "b82f52e2-dae7-4ec0-b9f9-0e21d7bfa3ee.png",
+      "number" : "4"
     },
-    "5": {
-      "Player": "Tyson Chandler",
-      "Pos": "C",
-      "Ht": "7-1",
-      "Wt": 240,
-      "Birth date": "October 2 1982",
-      "FIELD7": "us",
-      "Exp": "17",
-      "College": ""
+    "-Lh8WDs4U7DlR9RNNyEO" : {
+      "Exp" : "17",
+      "Player" : "Tyson Chandler",
+      "Pos" : "C",
+      "image" : "43e83f8f-3c54-4801-a9b4-e01639a3ac39.png",
+      "number" : "5"
     },
-    "6": {
-      "Player": "Lance Stephenson",
-      "Pos": "SG",
-      "Ht": "6-6",
-      "Wt": 230,
-      "Birth date": "September 5 1990",
-      "FIELD7": "us",
-      "Exp": "8",
-      "College": "University of Cincinnati"
+    "-Lh8WNJ72NHwJ8UMmbSk" : {
+      "Exp" : "1",
+      "Player" : "Josh Hart",
+      "Pos" : "SG",
+      "image" : "eb104848-60fa-468e-9a54-61744c7af7e6.png",
+      "number" : "3"
     },
-    "7": {
-      "Player": "JaVale McGee",
-      "Pos": "C",
-      "Ht": "7-0",
-      "Wt": 270,
-      "Birth date": "January 19 1988",
-      "FIELD7": "us",
-      "Exp": "10",
-      "College": "University of Nevada Reno"
+    "-Lh8WY9mP86CIYAp63Nt" : {
+      "Exp" : "2",
+      "Player" : "Brandon Ingram",
+      "Pos" : "SF",
+      "image" : "573b1365-a799-4a02-b509-870873c29916.png",
+      "number" : "14"
     },
-    "9": {
-      "Player": "Rajon Rondo",
-      "Pos": "PG",
-      "Ht": "6-1",
-      "Wt": 186,
-      "Birth date": "February 22 1986",
-      "FIELD7": "us",
-      "Exp": "12",
-      "College": "University of Kentucky"
+    "-Lh8Wp3OWxqr2Wz0BP_W" : {
+      "Exp" : "15",
+      "Player" : "LeBron James",
+      "Pos" : "SF",
+      "image" : "be9a3565-8b91-452f-b1dc-24ab1592bafd.png",
+      "number" : "23"
     },
-    "10": {
-      "Player": "Jemerrio Jones",
-      "Pos": "SF",
-      "Ht": "6-5",
-      "Wt": 174,
-      "Birth date": "April 9 1995",
-      "FIELD7": "us",
-      "Exp": "R",
-      "College": "Hill College New Mexico State University"
+    "-Lh8X05gtkkXJr0r7Qz2" : {
+      "Exp" : "R",
+      "Player" : "Jemerrio Jones",
+      "Pos" : "SF",
+      "image" : "4bf4079a-6230-4fd2-9bdb-852f1e58504f.png",
+      "number" : "10"
     },
-    "14": {
-      "Player": "Brandon Ingram",
-      "Pos": "SF",
-      "Ht": "6-9",
-      "Wt": 190,
-      "Birth date": "September 2 1997",
-      "FIELD7": "us",
-      "Exp": "2",
-      "College": "Duke University"
+    "-Lh8XMI_uRbscwU2YTVb" : {
+      "Exp" : "1",
+      "Player" : "Kyle Kuzma",
+      "Pos" : "PF",
+      "image" : "b5f7f721-dd28-49e6-9689-6d112ac90823.png",
+      "number" : "0"
     },
-    "15": {
-      "Player": "Moritz Wagner",
-      "Pos": "C",
-      "Ht": "6-11",
-      "Wt": 245,
-      "Birth date": "April 26 1997",
-      "FIELD7": "de",
-      "Exp": "R",
-      "College": "University of Michigan"
+    "-Lh8XVBJjCmVDAg_Yr9-" : {
+      "Exp" : "7",
+      "Player" : "JaVale McGee",
+      "Pos" : "C",
+      "image" : "867c5359-c15b-4834-89c8-244cfa561504.png",
+      "number" : "7"
     },
-    "17": {
-      "Player": "Isaac Bonga",
-      "Pos": "PG",
-      "Ht": "6-8",
-      "Wt": 180,
-      "Birth date": "November 8 1999",
-      "FIELD7": "de",
-      "Exp": "R",
-      "College": ""
+    "-Lh8XeIleS7qxY8z4gbG" : {
+      "Exp" : "5",
+      "Player" : "Mike Muscala",
+      "Pos" : "PF",
+      "image" : "b7147041-5e1a-43fe-940e-f87b4e334fcc.png",
+      "number" : "31"
     },
-    "19": {
-      "Player": "Johnathan Williams  (TW)",
-      "Pos": "C",
-      "Ht": "6-9",
-      "Wt": 228,
-      "Birth date": "May 22 1995",
-      "FIELD7": "us",
-      "Exp": "R",
-      "College": "University of Missouri Gonzaga University"
+    "-Lh8Xm9jCmmeb-YHzsYk" : {
+      "Exp" : "12",
+      "Player" : "Rajon Rondo",
+      "Pos" : "PG",
+      "image" : "de62cd21-2dfd-4067-bd1a-733622879b7a.png",
+      "number" : "9"
     },
-    "23": {
-      "Player": "LeBron James",
-      "Pos": "SF",
-      "Ht": "6-8",
-      "Wt": 250,
-      "Birth date": "December 30 1984",
-      "FIELD7": "us",
-      "Exp": "15",
-      "College": ""
+    "-Lh8XwoOfxLyLkzpMXyG" : {
+      "Exp" : "8",
+      "Player" : "Lance Stephenson",
+      "Pos" : "SG",
+      "image" : "1840731e-886b-4c9b-a7fd-87b32b178c0d.png",
+      "number" : "6"
     },
-    "31": {
-      "Player": "Mike Muscala",
-      "Pos": "PF",
-      "Ht": "6-11",
-      "Wt": 240,
-      "Birth date": "July 1 1991",
-      "FIELD7": "us",
-      "Exp": "5",
-      "College": "Bucknell University"
+    "-Lh8Y8cAHrnxVKQ-Ix5W" : {
+      "Exp" : "R",
+      "Player" : "Moritz Wagner",
+      "Pos" : "C",
+      "image" : "2a51c629-7f97-47bb-92a4-d5fddf2f168a.png",
+      "number" : "15"
     },
-    "35": {
-      "Player": "Reggie Bullock",
-      "Pos": "SG",
-      "Ht": "6-7",
-      "Wt": 205,
-      "Birth date": "March 16 1991",
-      "FIELD7": "us",
-      "Exp": "5",
-      "College": "University of North Carolina"
+    "-Lh8YIJEyV59BLmlVuEp" : {
+      "Exp" : "R",
+      "Player" : "Johnathan Williams",
+      "Pos" : "C",
+      "image" : "bb12309b-c6cb-47e7-9838-33b310dd32cc.png",
+      "number" : "19"
     }
   },
   "teams": {
