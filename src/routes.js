@@ -7,6 +7,7 @@ import PublicRoute from './components/auth-routes/PublicRoutes';
 
 import Home from './components/home';
 import SignIn from './components/signin';
+import Team from './components/team';
 
 import Dashboard from './components/admin/Dashboard';
 import AdminMatches from './components/admin/matches';
@@ -26,6 +27,7 @@ const Routes = (props) => {
         <PrivateRoute {...props} exact path="/admin-games" component={AdminMatches} />
         <PrivateRoute {...props} exact path="/dashboard" component={Dashboard} />
         <PublicRoute {...props} exact path="/signin" component={SignIn} restricted={true} />
+        <PublicRoute {...props} exact path="/team" component={Team} restricted={false} />
         <PublicRoute {...props} exact path="/" component={Home} restricted={false} />
       </Switch>
     </Layout>

@@ -425,6 +425,7 @@ footer .footer_discl {
     width: 300px;
     padding: 10px 10px 20px 10px;
     font-family: 'Righteous';
+    float: left;
 }
 .player_card_wrapper .player_card_thmb {
     border: 1px solid #eeeeee;
@@ -440,14 +441,15 @@ footer .footer_discl {
 }
 .player_card_wrapper .player_card_number {
     color: #FDB927;
-    font-size: 185px;
+    font-size: 150px;
     text-align: right;
     line-height: 160px;
+    float: right;
 }
 
 .player_card_wrapper .player_card_name {
-    position: absolute;
     bottom: 0px;
+    float: left;
 }
 
 .player_card_wrapper .player_card_name span { 
@@ -644,7 +646,7 @@ footer .footer_discl {
     font-size: 90px;
     margin: 30px 0px;
     font-family: 'Righteous', cursive;
-    color: #d5ebfe;
+    color: #552583;
 }
 
 .team_category_wrapper .team_cards {

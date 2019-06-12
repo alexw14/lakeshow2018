@@ -40,7 +40,6 @@ class AdminMatches extends Component {
                 <TableRow>
                   <TableCell>Date</TableCell>
                   <TableCell>Opponent</TableCell>
-                  <TableCell>Result</TableCell>
                   <TableCell>Final</TableCell>
                 </TableRow>
               </TableHead>
@@ -54,8 +53,7 @@ class AdminMatches extends Component {
                           {match.at}{match.awayTeam}
                         </Link>
                       </TableCell>
-                      <TableCell>{match.result}</TableCell>
-                      <TableCell>{match.awayTeamScore} - {match.homeTeamScore} (Lakers)</TableCell>
+                      <TableCell>{match.result} {match.homeTeamScore}-{match.awayTeamScore}</TableCell>
                     </TableRow>
                   ))
                   : null
