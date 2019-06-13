@@ -19,6 +19,44 @@ class GamesList extends Component {
     return arr[arr.length - 1];
   }
 
+  getGameBlocks = (data) => {
+    let awayTeam = '';
+    let homeTeam = '';
+    if (data.at) {
+      awayTeam = data.homeTeam;
+      homeTeam = data.awayTeam;
+    } else {
+      awayTeam = data.awayTeam;
+      homeTeam = data.homeTeam;
+    }
+    return (
+      <div>
+        <div className="block_wraper">
+          <div className="block">
+            <div
+              className="icon"
+              style={{ background: `url(/images/team_icons/${this.getTeamName(awayTeam)}.png)` }}
+            />
+            <div className="team">{data.awayTeam}</div>
+            <div className="result">{data.awayTeamScore}</div>
+          </div>
+          <div className="block">
+            <div
+              className="icon"
+              style={{ background: `url(/images/team_icons/${this.getTeamName(homeTeam)}.png)` }}
+            />
+            <div className="team">{data.homeTeam}</div>
+            <div className="result">{data.homeTeamScore}</div>
+          </div>
+        </div>
+        <div className="block_wraper nfo">
+          <div><strong>Date:</strong> {data.date}</div>
+          <div><strong>Record:</strong> {data.W}-{data.L}</div>
+        </div>
+      </div>
+    )
+  }
+
   showGames = () => {
     console.log(this.state.gamesList)
     return (
@@ -58,28 +96,7 @@ class GamesList extends Component {
                       transform: `translate(${x}px)`
                     }}
                   >
-                    <div className="block_wraper">
-                      <div className="block">
-                        <div
-                          className="icon"
-                          style={{ background: `url(/images/team_icons/${this.getTeamName(data.awayTeam)}.png)` }}
-                        />
-                        <div className="team">{data.awayTeam}</div>
-                        <div className="result">{data.awayTeamScore}</div>
-                      </div>
-                      <div className="block">
-                        <div
-                          className="icon"
-                          style={{ background: `url(/images/team_icons/${this.getTeamName(data.homeTeam)}.png)` }}
-                        />
-                        <div className="team">{data.homeTeam}</div>
-                        <div className="result">{data.homeTeamScore}</div>
-                      </div>
-                    </div>
-                    <div className="block_wraper nfo">
-                      <div><strong>Date:</strong> {data.date}</div>
-                      <div><strong>Record:</strong> {data.W}-{data.L}</div>
-                    </div>
+                    {this.getGameBlocks(data)}
                   </div>
                 ))}
               </div>
