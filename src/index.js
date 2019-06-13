@@ -4,15 +4,12 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './resources/css/app.css';
 import Routes from './routes';
-import ScrollToTop from './components/ui/scroll-to-top';
 import { firebase } from './firebase';
 
 const App = (props) => {
   return (
     <BrowserRouter>
-      <ScrollToTop>
         <Routes {...props} />
-      </ScrollToTop>
     </BrowserRouter>
   )
 }
