@@ -42,6 +42,17 @@ class Games extends Component {
     })
   }
 
+  showResult = (condition) => {
+    const list = this.state.games.filter((game) => {
+      return game.result === condition
+    });
+    this.setState({
+      filteredGames: condition === "All" ? this.state.games : list,
+      gamesFilter: 'All',
+      resultFilter: condition
+    })
+  }
+
   render() {
     return (
       <div className="the_matches_container">
@@ -53,25 +64,59 @@ class Games extends Component {
                   Show Games:
                 </div>
                 <div className="cont">
-                  <div className={`option`}
+                  <div className={`option ${this.state.gamesFilter === 'All' ? 'active' : ''}`}
                     onClick={() => this.showGames('All')}
                   >
                     All
                   </div>
-                  <div className={`option`}
+                  <div className={`option ${this.state.gamesFilter === 'Home' ? 'active' : ''}`}
                     onClick={() => this.showGames('Home')}
                   >
                     Home
                   </div>
-                  <div className={`option`}
+                  <div className={`option ${this.state.gamesFilter === 'Away' ? 'active' : ''}`}
                     onClick={() => this.showGames('Away')}
                   >
                     Away
                   </div>
                 </div>
               </div>
+              <div className="match_filters_box">
+                <div className="tag">
+                  Result:
+                </div>
+                <div className="cont">
+                  <div className={`option ${this.state.resultFilter === 'All' ? 'active' : ''}`}
+                    onClick={() => this.showResult('All')}
+                  >
+                    All
+                  </div>
+                  <div className={`option ${this.state.resultFilter === 'W' ? 'active' : ''}`}
+                    onClick={() => this.showResult('W')}
+                  >
+                    W
+                  </div>
+                  <div className={`option ${this.state.resultFilter === 'L' ? 'active' : ''}`}
+                    onClick={() => this.showResult('L')}
+                  >
+                    L
+                  </div>
+                </div>
+              </div>
             </div>
             <GamesList games={this.state.filteredGames} />
+            {
+              this.state.isLoading ?
+                <div className="progress"
+                  style={{ textAlign: 'center', margin: '30px 0px' }}
+                >
+                  <CircularProgress
+                    style={{ color: '#552583' }}
+                    thickness={7}
+                  />
+                </div>
+                : null
+            }
           </div>
           <div className="right">
 

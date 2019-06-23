@@ -141,7 +141,7 @@ button {
     text-align: center;
     font-size: 90px;
     font-family: 'Righteous', cursive;
-    color: #d5ebfe;
+    color: #552583;
 }
 
 
@@ -358,7 +358,7 @@ footer .footer_discl {
 .match_filters {
      display: flex;
      border-bottom: 1px solid #01285e;
-     background: #FDB927;
+     background: #ffffff;
 }
 .match_filters .tag {
     font-weight: 300;
@@ -375,14 +375,14 @@ footer .footer_discl {
 }
 
 .match_filters .option.active {
-    background: #62a2d3;
-    color: #fff;
+    background: #fdb927;
+    color: #000;
 }
 
 .match_filters_box {
     padding: 10px 20px;
     border-right: 1px solid #01285e;
-    background: #FDB927;
+    background: #ffffff;
 }
 
 .match_filters .cont {
