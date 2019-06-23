@@ -358,12 +358,12 @@ footer .footer_discl {
 .match_filters {
      display: flex;
      border-bottom: 1px solid #01285e;
-     background: #dff1ff;
+     background: #FDB927;
 }
 .match_filters .tag {
     font-weight: 300;
     margin-bottom: 5px;
-    color: #656565;
+    color: #000000;
 }
 .match_filters .option {
     background: #ffffff;
@@ -382,7 +382,7 @@ footer .footer_discl {
 .match_filters_box {
     padding: 10px 20px;
     border-right: 1px solid #01285e;
-    background: #dff1ff;
+    background: #FDB927;
 }
 
 .match_filters .cont {
