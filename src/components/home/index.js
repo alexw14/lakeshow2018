@@ -6,11 +6,11 @@ import Promotion from './promotion';
 
 const Home = () => {
   return (
-    <div className="bck_black">
+    <div className="background-black">
       <Featured />
-      <Matches />
-      <Players />
-      <Promotion />
+      {/* <Matches /> */}
+      {/* <Players /> */}
+      {/* <Promotion /> */}
     </div>
   );
 };

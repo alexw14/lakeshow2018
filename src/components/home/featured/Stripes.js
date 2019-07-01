@@ -7,25 +7,53 @@ class Stripes extends Component {
   state = {
     stripes: [
       {
-        background: '#FDB927',
-        left: 250,
-        rotate: 25,
-        top: -260,
+        background: '#552583',
+        left: 0,
+        rotate: 0,
+        top: 80,
         delay: 200
       },
       {
-        background: '#ffffff',
-        left: 500,
-        rotate: 25,
-        top: -397,
+        background: '#fdb927',
+        left: 0,
+        rotate: 0,
+        top: 160,
         delay: 400
       },
       {
-        background: '#FDB927',
-        left: 750,
-        rotate: 25,
-        top: -498,
+        background: '#552583',
+        left: 0,
+        rotate: 0,
+        top: 240,
         delay: 600
+      },
+      {
+        background: '#fdb927',
+        left: 0,
+        rotate: 0,
+        top: 320,
+        delay: 800
+      },
+      {
+        background: '#552583',
+        left: 0,
+        rotate: 0,
+        top: 400,
+        delay: 1000
+      },
+      {
+        background: '#fdb927',
+        left: 0,
+        rotate: 0,
+        top: 480,
+        delay: 1200
+      },
+      {
+        background: '#552583',
+        left: 0,
+        rotate: 0,
+        top: 560,
+        delay: 1400
       }
     ]
   }
@@ -48,7 +76,7 @@ class Stripes extends Component {
           left: [stripe.left],
           rotate: [stripe.rotate],
           top: [stripe.top],
-          timing: { delay: stripe.delay, duration: 200, ease: easePolyOut }
+          timing: { delay: stripe.delay, duration: 600, ease: easePolyOut }
         }}
       >
         {({ background, opacity, left, rotate, top }) => {
@@ -69,7 +97,7 @@ class Stripes extends Component {
 
   render() {
     return (
-      <div className="featured_stripes">
+      <div className="featured-stripes">
         {this.showStripes()}
       </div>
     );

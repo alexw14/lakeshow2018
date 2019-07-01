@@ -3,16 +3,16 @@ import { LakersLogo } from '../ui/icons';
 
 const Footer = () => {
   return (
-    <footer className="bck_black">
+    <footer style={{ background: '#000' }}>
       <div className="footer_logo">
-        <LakersLogo 
+        <LakersLogo
           link={true}
           linkTo='/'
           width='70px'
           height='70px'
         />
       </div>
-      <div className="footer_discl">
+      <div>
         Lakers 2018
       </div>
     </footer>

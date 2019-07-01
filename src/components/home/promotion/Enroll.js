@@ -94,12 +94,12 @@ class Enroll extends Component {
   render() {
     return (
       <Fade>
-        <div className="enroll_wrapper">
-          <form onSubmit={(event) => this.submitForm(event)}>
-            <div className="enroll_title">
+        <div className="row">
+          <form onSubmit={(event) => this.submitForm(event)} class="col s12">
+            <div className="row">
               Join Our Mailing List
             </div>
-            <div className="enroll_input">
+            <div className="row input-field col s6">
               <FormField
                 id={'email'}
                 formData={this.state.formData.email}

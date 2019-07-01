@@ -19,15 +19,13 @@ class Header extends Component {
         }}
       >
         <Toolbar style={{ display: 'flex' }}>
-          <div style={{ flexGrow: 1 }}>
-            <div className="header_logo">
-              <LakersLogo
-                link={true}
-                linkTo='/'
-                width='70px'
-                height='70px'
-              />
-            </div>
+          <div className="brand-logo">
+            <LakersLogo
+              link={true}
+              linkTo='/'
+              width='70px'
+              height='70px'
+            />
           </div>
           <Link to='/team'>
             <Button color="inherit">Team</Button>

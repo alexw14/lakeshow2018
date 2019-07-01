@@ -1,0 +1,91 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.background-black {
+  background: #000;
+}
+
+.img_cover {
+  background-size: cover !important;
+}
+
+.link_logo {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-logo {
+  margin-right: 24px;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.featured-wrapper {
+  height: 800px;
+  margin: 90px auto 0px;
+  overflow: hidden;
+}
+
+.featured-stripes {
+  position: relative;
+}
+
+.featured-stripes .stripe {
+  width: 2000px;
+  height: 80px;
+  position: absolute;
+}
+
+.featured-text {
+  position: absolute;
+  color: #fff;
+  font-size: 50px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.featured-player {
+  width: 240px;
+  height: 500px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  position: absolute;
+}
+
+@media screen and (max-width: 414px) {
+  .featured-wrapper {
+    height: 500px;
+  }
+
+  .featured-first, .featured-second, .featured-third {
+    font-size: 24px;
+  }
+
+  .featured-first {
+    transform: translate(10px, 100px) !important;
+  }
+
+  .featured-second {
+    transform: translate(10px, 175px) !important;
+  }
+
+  .featured-third {
+    transform: translate(10px, 250px) !important;
+  }
+
+  .featured-player {
+    transform: translate(165px, 50px) !important;
+    width: 375px;
+    height: 375px;
+  }
+}

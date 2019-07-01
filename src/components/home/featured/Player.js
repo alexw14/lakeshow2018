@@ -4,32 +4,28 @@ import Animate from 'react-move/Animate';
 
 import FeaturedPlayer from '../../../resources/images/lakers_featured_player.png';
 
-class Text extends Component {
+class Player extends Component {
 
-  animateText = () => (
+  animatePlayer = () => (
     <Animate
       show={true}
       start={{
         opacity: 0,
-        x: 503,
-        y: 0
       }}
       enter={{
         opacity: [1],
-        x: [20],
-        y: [0],
-        timing: { duration: 500, ease: easePolyOut }
+        timing: { delay: 250, duration: 500, ease: easePolyOut }
       }}
     >
-      {({ opacity, x, y }) => {
+      {({ opacity }) => {
         return (
-          <div className="featured-text"
+          <div className="featured-player"
             style={{
               opacity,
-              transform: `translate(${x}px,${y}px)`
+              background: `url(${FeaturedPlayer})`,
+              transform: `translate(500px,100px)`
             }}
           >
-            LakeShow 2018-19
           </div>
         )
       }}
@@ -38,11 +34,11 @@ class Text extends Component {
 
   render() {
     return (
-      <div className="row">
-        {this.animateText()}
+      <div className="">
+        {this.animatePlayer()}
       </div>
     );
   }
 }
 
-export default Text;
+export default Player;
