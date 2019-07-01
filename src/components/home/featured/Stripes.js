@@ -82,7 +82,7 @@ class Stripes extends Component {
         {({ background, opacity, left, rotate, top }) => {
           return (
             <div
-              className="stripe"
+              className={`stripe stripe-${i}`}
               style={{
                 background,
                 opacity,

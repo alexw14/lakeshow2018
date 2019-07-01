@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="background-black">
       <Featured />
-      {/* <Matches /> */}
+      <Matches />
       {/* <Players /> */}
       {/* <Promotion /> */}
     </div>
