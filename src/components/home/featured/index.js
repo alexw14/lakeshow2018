@@ -5,7 +5,7 @@ import Player from './Player';
 
 const Featured = () => {
   return (
-    <div className="featured-wrapper container">
+    <div className="featured-wrapper container" style={{ height: `${window.innerHeight}px`, overflow: 'hidden' }}>
       <Text />
       <Stripes />
       <Player />

@@ -2,16 +2,16 @@ import React from 'react';
 
 const PlayerCard = (props) => {
   return (
-    <div className="player_card_wrapper">
+    <div className="player-card-wrapper">
       <div 
-        className="player_card_thmb"
+        className="player-card-thmb"
         style={{background:`#fedc93 url(${props.bck})`}}
       ></div>
-      <div className="player_card_info">
-        <div className="player_card_number">
+      <div className="player-card-info">
+        <div className="player-card-number">
           {props.number}
         </div>
-        <div className="player_card_name">
+        <div className="player-card-name">
           <span>{props.firstName}</span>
           <span>{props.lastName}</span>
         </div>

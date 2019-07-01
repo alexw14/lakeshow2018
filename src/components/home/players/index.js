@@ -12,27 +12,29 @@ class Players extends Component {
   render() {
     return (
       <Reveal
-        fraction={0.7}
+        fraction={0.4}
         onReveal={() => {
           this.setState({
             show: true
           })
         }}
       >
-
-        <div className="home_meetplayers"
+        <div className="home-players-section"
           style={{ background: '#ffffff' }}
         >
           <div className="container">
-            <div className="home_meetplayers_wrapper">
-              <div className="home_card_wrapper">
+            <div className="row">
+              <div className="col s6 starting-lineup">Starting Lineup</div>
+            </div>
+            <div className="home-players-wrapper">
+              <div className="home-card-wrapper">
                 <HomeCards
                   show={this.state.show}
                 />
               </div>
-              <div className="home_text_wrapper">
+              {/* <div className="home-text-wrapper">
                 <div>
-                  <Tag bck="#552583" size="100px" color="#ffffff"
+                  <Tag bck="#552583" size="81px" color="#ffffff"
                     add={{
                       display: 'inline-block',
                       marginBottom: '20px'
@@ -42,7 +44,7 @@ class Players extends Component {
                 </Tag>
                 </div>
                 <div>
-                  <Tag bck="#552583" size="100px" color="#ffffff"
+                  <Tag bck="#552583" size="81px" color="#ffffff"
                     add={{
                       display: 'inline-block',
                       marginBottom: '20px'
@@ -52,13 +54,13 @@ class Players extends Component {
                 </Tag>
                 </div>
                 <div>
-                  <Tag bck="#552583" size="100px" color="#ffffff"
+                  <Tag bck="#552583" size="81px" color="#ffffff"
                     add={{
                       display: 'inline-block',
                       marginBottom: '20px'
                     }}
                   >
-                    Players
+                    Squad
                 </Tag>
                 </div>
                 <div>
@@ -74,7 +76,7 @@ class Players extends Component {
                     Meet them here
                 </Tag>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
