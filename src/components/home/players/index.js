@@ -24,7 +24,7 @@ class Players extends Component {
         >
           <div className="container">
             <div className="row">
-              <div className="col s6 starting-lineup">Starting Lineup</div>
+              <div className="col s12 starting-lineup">Starting Lineup</div>
             </div>
             <div className="home-players-wrapper">
               <div className="home-card-wrapper">
@@ -32,51 +32,6 @@ class Players extends Component {
                   show={this.state.show}
                 />
               </div>
-              {/* <div className="home-text-wrapper">
-                <div>
-                  <Tag bck="#552583" size="81px" color="#ffffff"
-                    add={{
-                      display: 'inline-block',
-                      marginBottom: '20px'
-                    }}
-                  >
-                    Meet
-                </Tag>
-                </div>
-                <div>
-                  <Tag bck="#552583" size="81px" color="#ffffff"
-                    add={{
-                      display: 'inline-block',
-                      marginBottom: '20px'
-                    }}
-                  >
-                    The
-                </Tag>
-                </div>
-                <div>
-                  <Tag bck="#552583" size="81px" color="#ffffff"
-                    add={{
-                      display: 'inline-block',
-                      marginBottom: '20px'
-                    }}
-                  >
-                    Squad
-                </Tag>
-                </div>
-                <div>
-                  <Tag bck="#ffffff" size="27px" color="#552583"
-                    link={true}
-                    linkTo="/team"
-                    add={{
-                      display: 'inline-block',
-                      marginBottom: '20px',
-                      border: '1px solid #000000'
-                    }}
-                  >
-                    Meet them here
-                </Tag>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>

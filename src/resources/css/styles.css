@@ -68,10 +68,18 @@ footer {
 .home-players-wrapper .home-card-wrapper .home-card-container {
   display: flex;
   flex-wrap: wrap;
+  margin: 0px 24px;
 }
 
 .home-players-wrapper .home-card-wrapper .home-card-container .item {
   margin: 10px 24px;
+}
+
+.home-players-wrapper .home-card-wrapper .home-card-container .meet-squad-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
 }
 
 .home-players-section .home-card-wrapper {
@@ -196,6 +204,25 @@ footer {
   margin-top: 24px;
 }
 
+.promotion-wrapper {
+  padding: 30px 0px 100px;
+}
+
+.promotion-wrapper .enroll-wrapper {
+  text-align: center;
+}
+
+.promotion-wrapper .enroll-wrapper .enroll-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.promotion-wrapper .enroll-wrapper .enroll-input {
+  width: 330px;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
 @media screen and (max-width: 767px) {
   .featured-wrapper {
     height: 500px;
@@ -254,6 +281,15 @@ footer {
 
   .more-games-btn {
     text-align: center;
+  }
+
+  .home-players-wrapper .home-card-wrapper .home-card-container .item {
+    margin: 0 auto !important;
+  }
+
+  .home-players-wrapper .home-card-wrapper .home-card-container .meet-squad-btn {
+    margin: 0 auto !important;
+    padding-top: 24px !important;
   }
 }
 

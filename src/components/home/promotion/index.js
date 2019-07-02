@@ -4,9 +4,8 @@ import Enroll from './Enroll';
 
 const Promotion = () => {
   return (
-    <div className="promotion_wrapper" style={{background:'#ffffff'}}>
+    <div className="promotion-wrapper" style={{background:'#ffffff'}}>
       <div>
-        {/* <Animation /> */}
         <Enroll />
       </div>
     </div>
