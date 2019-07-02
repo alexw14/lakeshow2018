@@ -65,6 +65,15 @@ footer {
   min-height: 850px;
 }
 
+.home-players-wrapper .home-card-wrapper .home-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-players-wrapper .home-card-wrapper .home-card-container .item {
+  margin: 10px 24px;
+}
+
 .home-players-section .home-card-wrapper {
   position: relative;
   min-height: 850px;
