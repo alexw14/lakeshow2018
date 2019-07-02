@@ -61,25 +61,25 @@ class Team extends Component {
 
   render() {
     return (
-      <div className="the_team_container">
+      <div className="the-team-container container">
         {
           !this.state.isLoading ?
-            <div>
-              <div className="team_category_wrapper">
+            <div className="the-team-wrapper">
+              <div className="team-category-wrapper">
                 <div className="title">Guards</div>
-                <div className="team_cards">
+                <div className="team-cards">
                   {this.showPlayersByCategory('G')}
                 </div>
               </div>
-              <div className="team_category_wrapper">
+              <div className="team-category-wrapper">
                 <div className="title">Forwards</div>
-                <div className="team_cards">
+                <div className="team-cards">
                   {this.showPlayersByCategory('F')}
                 </div>
               </div>
-              <div className="team_category_wrapper">
+              <div className="team-category-wrapper">
                 <div className="title">Centers</div>
-                <div className="team_cards">
+                <div className="team-cards">
                   {this.showPlayersByCategory('C')}
                 </div>
               </div>

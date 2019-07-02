@@ -223,6 +223,36 @@ footer {
   padding: 10px 0px;
 }
 
+.the-team-container {
+  margin-top: 100px;
+  min-height: 100vh;
+}
+
+.team-category-wrapper .title {
+  font-size: 90px;
+  font-weight: bold;
+  color: #552583;
+  margin: 30px 0px;
+}
+
+.team-category-wrapper .team-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-category-wrapper .team-cards .item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.the-team-container .team-category-wrapper .team-cards .player-card-wrapper {
+  width: 300px;
+}
+
+.the-team-container .team-category-wrapper .team-cards .player-card-wrapper .player-card-thmb {
+  height: 250px;
+}
+
 @media screen and (max-width: 767px) {
   .featured-wrapper {
     height: 500px;
@@ -290,6 +320,15 @@ footer {
   .home-players-wrapper .home-card-wrapper .home-card-container .meet-squad-btn {
     margin: 0 auto !important;
     padding-top: 24px !important;
+  }
+
+  .team-category-wrapper .title {
+    font-size: 60px !important;
+    text-align: center;
+  }
+
+  .team-category-wrapper .team-cards .item {
+    margin: 10px auto !important;
   }
 }
 
