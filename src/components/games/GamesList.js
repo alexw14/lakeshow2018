@@ -67,7 +67,7 @@ class GamesList extends Component {
             keyAccessor={(d) => d.id}
             start={() => ({
               opacity: 0,
-              x: -200
+              x: -240
             })}
             enter={(d, i) => ({
               opacity: [1],
@@ -81,7 +81,7 @@ class GamesList extends Component {
             })}
             leave={(d, i) => ({
               opacity: [0],
-              x: [-200],
+              x: [-240],
               timing: { duration: 500, delay: i * 50, ease: easePolyOut }
             })}
           >

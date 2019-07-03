@@ -58,21 +58,6 @@ class Games extends Component {
       <div className="all-games-container container">
         <div className="all-games-wrapper">
           <div className="left">
-            <GamesList games={this.state.filteredGames} />
-            {
-              this.state.isLoading ?
-                <div className="progress"
-                  style={{ textAlign: 'center', margin: '30px 0px' }}
-                >
-                  <CircularProgress
-                    style={{ color: '#552583' }}
-                    thickness={7}
-                  />
-                </div>
-                : null
-            }
-          </div>
-          <div className="right">
             <div className="all-games-filters container">
               <div className="all-games-filters-box">
                 <div className="tag">
@@ -119,6 +104,21 @@ class Games extends Component {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="right">
+            <GamesList games={this.state.filteredGames} />
+            {
+              this.state.isLoading ?
+                <div className="progress"
+                  style={{ textAlign: 'center', margin: '30px 0px' }}
+                >
+                  <CircularProgress
+                    style={{ color: '#552583' }}
+                    thickness={7}
+                  />
+                </div>
+                : null
+            }
           </div>
         </div>
       </div>

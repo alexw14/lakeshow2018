@@ -267,10 +267,6 @@ footer {
 }
 
 .all-games-wrapper .left {
-  flex-grow: 1;
-}
-
-.all-games-wrapper .right {
   width: 20%;
 }
 
@@ -285,7 +281,7 @@ footer {
 
 .all-games-wrapper .game-box-big .block-wrapper {
   display: block;
-  margin-right: 10px;
+  margin-right: 24px;
   float: left;
 }
 
@@ -315,6 +311,7 @@ footer {
   border-left: 1px solid #552583;
   height: 100px;
   padding-left: 10px;
+  padding-top: 24px;
   color: #000;
 }
 
@@ -421,6 +418,35 @@ footer {
   .team-category-wrapper .team-cards .item {
     margin: 10px auto !important;
   }
+
+  .all-games-wrapper {
+    flex-direction: column;
+  }
+
+  .all-games-wrapper .left {
+    width: unset !important;
+  }
+
+  .all-games-wrapper .game-box-big .block-wrapper .block .team {
+    display: none;
+  }
+
+  .all-games-wrapper .game-box-big .block-wrapper .block {
+    min-width: 125px !important;
+  }
+
+  .all-games-wrapper .all-games-filters .all-games-filters-box .option {
+    width: 100px !important;
+    margin: 0 auto !important;
+  }
+
+  .all-games-filters.container {
+    display: flex;
+  }
+  
+  .all-games-wrapper .all-games-filters .all-games-filters-box {
+    flex-grow: 1;
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -432,5 +458,13 @@ footer {
   .match-block .match-wrapper .match-top .right, .match-block .match-wrapper .match-bottom .right {
     font-size: 1.5vw !important;
     padding-top: 20px !important;
+  }
+
+  .all-games-wrapper .game-box-big .block-wrapper .block .team {
+    display: none;
+  }
+
+  .all-games-wrapper .game-box-big .block-wrapper .block {
+    min-width: 200px !important;
   }
 }
