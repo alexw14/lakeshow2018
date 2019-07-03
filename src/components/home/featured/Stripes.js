@@ -8,16 +8,30 @@ class Stripes extends Component {
     stripes: [
       {
         background: '#552583',
-        left: 0,
+        left: 300,
         rotate: 0,
         top: 80,
-        delay: 200
+        delay: 100
       },
       {
         background: '#fdb927',
-        left: 0,
+        left: 300,
+        rotate: 0,
+        top: 120,
+        delay: 200
+      },
+      {
+        background: '#552583',
+        left: 300,
         rotate: 0,
         top: 160,
+        delay: 300
+      },
+      {
+        background: '#fdb927',
+        left: 300,
+        rotate: 0,
+        top: 200,
         delay: 400
       },
       {
@@ -25,13 +39,27 @@ class Stripes extends Component {
         left: 0,
         rotate: 0,
         top: 240,
-        delay: 600
+        delay: 500
       },
       {
         background: '#fdb927',
         left: 0,
         rotate: 0,
+        top: 280,
+        delay: 600
+      },
+      {
+        background: '#552583',
+        left: 0,
+        rotate: 0,
         top: 320,
+        delay: 700
+      },
+      {
+        background: '#fdb927',
+        left: 0,
+        rotate: 0,
+        top: 360,
         delay: 800
       },
       {
@@ -39,13 +67,27 @@ class Stripes extends Component {
         left: 0,
         rotate: 0,
         top: 400,
-        delay: 1000
+        delay: 900
       },
       {
         background: '#fdb927',
         left: 0,
         rotate: 0,
+        top: 440,
+        delay: 1000
+      },
+      {
+        background: '#552583',
+        left: 0,
+        rotate: 0,
         top: 480,
+        delay: 1100
+      },
+      {
+        background: '#fdb927',
+        left: 0,
+        rotate: 0,
+        top: 520,
         delay: 1200
       },
       {
@@ -53,7 +95,7 @@ class Stripes extends Component {
         left: 0,
         rotate: 0,
         top: 560,
-        delay: 1400
+        delay: 1300
       }
     ]
   }

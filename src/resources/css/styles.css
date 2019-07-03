@@ -44,7 +44,7 @@ footer {
 
 .featured-stripes .stripe {
   width: 2000px;
-  height: 80px;
+  height: 40px;
   position: absolute;
 }
 
@@ -60,6 +60,14 @@ footer {
 .featured-player {
   width: 240px;
   height: 500px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  position: absolute;
+}
+
+.featured-Logo {
+  width: 300px;
+  height: 250px;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   position: absolute;
@@ -343,7 +351,13 @@ footer {
 
 @media screen and (max-width: 767px) {
   .featured-wrapper {
-    height: 500px;
+    height: 600px;
+  }
+
+  .featured-Logo {
+    transform: translate(0px, 50px) !important;
+    width: 160px !important;
+    height: 150px !important;
   }
 
   .featured-text {
@@ -351,14 +365,14 @@ footer {
   }
 
   .featured-player {
-    transform: translate(165px, 50px) !important;
+    transform: translate(180px, 50px) !important;
     width: 180px;
     height: 350px;
   }
 
   .featured-stripes .stripe {
     width: 800px;
-    height: 55px;
+    height: 25px;
   }
 
   .featured-stripes .stripe-0 {
@@ -366,28 +380,53 @@ footer {
   }
 
   .featured-stripes .stripe-1 {
-    transform: rotate(0deg) translate(0px, 95px) !important;
+    transform: rotate(0deg) translate(0px, 65px) !important;
   }
 
   .featured-stripes .stripe-2 {
-    transform: rotate(0deg) translate(0px, 150px) !important;
+    transform: rotate(0deg) translate(0px, 90px) !important;
   }
 
   .featured-stripes .stripe-3 {
-    transform: rotate(0deg) translate(0px, 205px) !important;
+    transform: rotate(0deg) translate(0px, 115px) !important;
   }
 
   .featured-stripes .stripe-4 {
-    transform: rotate(0deg) translate(0px, 260px) !important;
+    transform: rotate(0deg) translate(0px, 140px) !important;
   }
 
   .featured-stripes .stripe-5 {
-    transform: rotate(0deg) translate(0px, 315px) !important;
+    transform: rotate(0deg) translate(0px, 165px) !important;
   }
 
   .featured-stripes .stripe-6 {
-    transform: rotate(0deg) translate(0px, 370px) !important;
+    transform: rotate(0deg) translate(0px, 190px) !important;
   }
+
+  .featured-stripes .stripe-7 {
+    transform: rotate(0deg) translate(0px, 215px) !important;
+  }
+
+  .featured-stripes .stripe-8 {
+    transform: rotate(0deg) translate(0px, 240px) !important;
+  }
+
+  .featured-stripes .stripe-9 {
+    transform: rotate(0deg) translate(0px, 265px) !important;
+  }
+
+  .featured-stripes .stripe-10 {
+    transform: rotate(0deg) translate(0px, 290px) !important;
+  }
+
+  .featured-stripes .stripe-11 {
+    transform: rotate(0deg) translate(0px, 315px) !important;
+  }
+
+  .featured-stripes .stripe-12 {
+    transform: rotate(0deg) translate(0px, 340px) !important;
+  }
+
 
   .home-games-wrapper .home-games .item .wrapper {
     padding: 0px 20px !important;
@@ -450,6 +489,11 @@ footer {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+
+  .featured-player {
+    transform: translate(350px, 90px) !important;
+  }
+
   .match-block .match-wrapper .match-top .left .team-name, .match-block .match-wrapper .match-bottom .left .team-name {
     font-size: 1.5vw !important;
     margin-top: 5px;

@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { easePolyOut } from 'd3-ease';
 import Animate from 'react-move/Animate';
 
-import FeaturedPlayer from '../../../resources/images/lakers_featured_player.png';
+import FeaturedLogo from '../../../resources/images/logos/lakers_logo_featured.jpg';
 
-class Player extends Component {
+class Logo extends Component {
 
-  animatePlayer = () => (
+  animateLogo = () => (
     <Animate
       show={true}
       start={{
@@ -14,16 +14,16 @@ class Player extends Component {
       }}
       enter={{
         opacity: [1],
-        timing: { delay: 2000, duration: 500, ease: easePolyOut }
+        timing: { delay: 0, duration: 1, ease: easePolyOut }
       }}
     >
       {({ opacity }) => {
         return (
-          <div className="featured-player"
+          <div className="featured-Logo"
             style={{
               opacity,
-              background: `url(${FeaturedPlayer})`,
-              transform: `translate(500px,95px)`
+              background: `url(${FeaturedLogo})`,
+              transform: `translate(0px,80px)`
             }}
           >
           </div>
@@ -35,10 +35,10 @@ class Player extends Component {
   render() {
     return (
       <div className="">
-        {this.animatePlayer()}
+        {this.animateLogo()}
       </div>
     );
   }
 }
 
-export default Player;
+export default Logo;

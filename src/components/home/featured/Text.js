@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { easePolyOut } from 'd3-ease';
 import Animate from 'react-move/Animate';
 
-import FeaturedPlayer from '../../../resources/images/lakers_featured_player.png';
-
 class Text extends Component {
 
   animateText = () => (
@@ -18,7 +16,7 @@ class Text extends Component {
         opacity: [1],
         x: [20],
         y: [0],
-        timing: { duration: 500, ease: easePolyOut }
+        timing: { duration: 1500, ease: easePolyOut }
       }}
     >
       {({ opacity, x, y }) => {

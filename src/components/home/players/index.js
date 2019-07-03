@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Tag } from '../../ui/misc';
 import Reveal from 'react-reveal/Reveal';
 import HomeCards from './Cards';
 

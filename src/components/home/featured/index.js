@@ -2,6 +2,7 @@ import React from 'react';
 import Stripes from './Stripes';
 import Text from './Text';
 import Player from './Player';
+import Logo from './Logo';
 
 const Featured = () => {
   return (
@@ -9,6 +10,7 @@ const Featured = () => {
       <Text />
       <Stripes />
       <Player />
+      <Logo />
     </div>
   )
 }
