@@ -351,7 +351,7 @@ footer {
 
 @media screen and (max-width: 767px) {
   .featured-wrapper {
-    height: 600px;
+    height: 600px !important;
   }
 
   .featured-Logo {
@@ -366,7 +366,7 @@ footer {
 
   .featured-player {
     transform: translate(180px, 50px) !important;
-    width: 180px;
+    width: 170px;
     height: 350px;
   }
 
