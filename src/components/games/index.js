@@ -55,11 +55,26 @@ class Games extends Component {
 
   render() {
     return (
-      <div className="the_matches_container">
-        <div className="the_matches_wrapper">
+      <div className="all-games-container container">
+        <div className="all-games-wrapper">
           <div className="left">
-            <div className="match_filters">
-              <div className="match_filters_box">
+            <GamesList games={this.state.filteredGames} />
+            {
+              this.state.isLoading ?
+                <div className="progress"
+                  style={{ textAlign: 'center', margin: '30px 0px' }}
+                >
+                  <CircularProgress
+                    style={{ color: '#552583' }}
+                    thickness={7}
+                  />
+                </div>
+                : null
+            }
+          </div>
+          <div className="right">
+            <div className="all-games-filters container">
+              <div className="all-games-filters-box">
                 <div className="tag">
                   Show Games:
                 </div>
@@ -81,7 +96,7 @@ class Games extends Component {
                   </div>
                 </div>
               </div>
-              <div className="match_filters_box">
+              <div className="all-games-filters-box">
                 <div className="tag">
                   Result:
                 </div>
@@ -104,22 +119,6 @@ class Games extends Component {
                 </div>
               </div>
             </div>
-            <GamesList games={this.state.filteredGames} />
-            {
-              this.state.isLoading ?
-                <div className="progress"
-                  style={{ textAlign: 'center', margin: '30px 0px' }}
-                >
-                  <CircularProgress
-                    style={{ color: '#552583' }}
-                    thickness={7}
-                  />
-                </div>
-                : null
-            }
-          </div>
-          <div className="right">
-
           </div>
         </div>
       </div>

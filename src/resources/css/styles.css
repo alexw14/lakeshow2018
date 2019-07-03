@@ -2,6 +2,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+button:focus {
+  background-color: transparent !important;
+}
+
 .background-black {
   background: #000;
 }
@@ -251,6 +255,93 @@ footer {
 
 .the-team-container .team-category-wrapper .team-cards .player-card-wrapper .player-card-thmb {
   height: 250px;
+}
+
+.all-games-container {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.all-games-wrapper {
+  display: flex;
+}
+
+.all-games-wrapper .left {
+  flex-grow: 1;
+}
+
+.all-games-wrapper .right {
+  width: 20%;
+}
+
+.all-games-wrapper .game-box-big {
+  width: 100%;
+  border-bottom: 2px solid #552583;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 140px;
+  clear: both;
+}
+
+.all-games-wrapper .game-box-big .block-wrapper {
+  display: block;
+  margin-right: 10px;
+  float: left;
+}
+
+.all-games-wrapper .game-box-big .block-wrapper .block {
+  display: flex;
+  min-width: 350px;
+}
+
+.all-games-wrapper .game-box-big .block-wrapper .block .icon {
+  width: 50px;
+  height: 50px;
+  background-size: cover !important;
+}
+
+.all-games-wrapper .game-box-big .block-wrapper .block .team, .all-games-wrapper .game-box-big .block-wrapper .block .result {
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.all-games-wrapper .game-box-big .block-wrapper .block .result {
+  font-size: 24px;
+}
+
+.all-games-wrapper .game-box-big .block-wrapper.nfo {
+  border-left: 1px solid #552583;
+  height: 100px;
+  padding-left: 10px;
+  color: #000;
+}
+
+.all-games-wrapper .all-games-filters .all-games-filters-box {
+  padding: 10px 10px;
+}
+
+.all-games-wrapper .all-games-filters .all-games-filters-box .tag {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+  text-align: center;
+}
+
+.all-games-wrapper .all-games-filters .all-games-filters-box .option {
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 13px;
+  margin: 0px 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.all-games-wrapper .all-games-filters .all-games-filters-box .option.active {
+  background: #fdb927;
+  color: #000;
 }
 
 @media screen and (max-width: 767px) {

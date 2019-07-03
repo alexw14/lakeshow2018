@@ -31,7 +31,7 @@ class GamesList extends Component {
     }
     return (
       <div>
-        <div className="block_wraper">
+        <div className="block-wrapper">
           <div className="block">
             <div
               className="icon"
@@ -49,7 +49,7 @@ class GamesList extends Component {
             <div className="result">{data.homeTeamScore}</div>
           </div>
         </div>
-        <div className="block_wraper nfo">
+        <div className="block-wrapper nfo">
           <div><strong>Date:</strong> {data.date}</div>
           <div><strong>Record:</strong> {data.W}-{data.L}</div>
         </div>
@@ -90,7 +90,7 @@ class GamesList extends Component {
                 {nodes.map(({ key, data, state: { x, opacity } }) => (
                   <div
                     key={key}
-                    className="match_box_big"
+                    className="game-box-big"
                     style={{
                       opacity,
                       transform: `translate(${x}px)`
