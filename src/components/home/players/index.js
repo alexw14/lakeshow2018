@@ -10,33 +10,55 @@ class Players extends Component {
 
   render() {
     return (
-      <Reveal
-        fraction={0.4}
-        onReveal={() => {
-          this.setState({
-            show: true
-          })
-        }}
+      <div className="home-players-section"
+        style={{ background: '#ffffff' }}
       >
-        <div className="home-players-section"
-          style={{ background: '#ffffff' }}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col s12 starting-lineup">Starting Lineup</div>
-            </div>
-            <div className="home-players-wrapper">
-              <div className="home-card-wrapper">
-                <HomeCards
-                  show={this.state.show}
-                />
-              </div>
+        <div className="container">
+          <div className="row">
+            <div className="col s12 starting-lineup">Starting Lineup</div>
+          </div>
+          <div className="home-players-wrapper">
+            <div className="home-card-wrapper">
+              <HomeCards
+              />
             </div>
           </div>
         </div>
-      </Reveal>
-    );
+      </div>
+    )
   }
+
+  // Comment out due to bug in React-Reveal not rendering in Mobile
+
+  // render() {
+  //   return (
+  //     <Reveal
+  //       fraction={0.4}
+  //       onReveal={() => {
+  //         this.setState({
+  //           show: true
+  //         })
+  //       }}
+  //     >
+  //       <div className="home-players-section"
+  //         style={{ background: '#ffffff' }}
+  //       >
+  //         <div className="container">
+  //           <div className="row">
+  //             <div className="col s12 starting-lineup">Starting Lineup</div>
+  //           </div>
+  //           <div className="home-players-wrapper">
+  //             <div className="home-card-wrapper">
+  //               <HomeCards
+  //                 show={this.state.show}
+  //               />
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </Reveal>
+  //   );
+  // }
 }
 
 export default Players;
